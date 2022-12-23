@@ -13,6 +13,7 @@ a nice HTML report
    - Cucumber-java
    - Cucumber-junit
    - Object Mapper (Jackson, GSON)
+   - Reporting plugin (plugin added in CukesRunner) for report
    - (Selenium, Boni-Garcia) NO NEED
 * Which plugin we need to run from terminal?
     - Maven surefire  plug-in
@@ -30,3 +31,14 @@ a nice HTML report
       - (Headers & Body) depending on requirements:
          Body verificationL path, jsonPath, POJO, Java Classes, Hemcrest, Matchers
     
+De-Serialization: JSON --> JAVA codes (Customs classes or Collections). In order to do that, it is required of using:
+  - as() method
+  - Object Mappers
+
+
+## How to Run the Project? You need to install locally following:
+1. Maven
+2. Java JDK
+3. Git.exe
+4. Open the folder of the project and start terminal inside that folder
+5. Run command ``mvn clean verify ``
