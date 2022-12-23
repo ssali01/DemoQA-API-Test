@@ -8,7 +8,7 @@ public class ConfigurationReader {
 
         // 1- Create properties object
         // we make this private to be inaccessible from outside
-        // make static because static runs first and before everything else and
+        // make static because static runs first and before everything else, and
         // we will use this object under static method
        private static Properties properties = new Properties();
 
@@ -17,7 +17,7 @@ public class ConfigurationReader {
 
           try {
               // Create FileInputStream object to open file as a stream in Java memory
-              FileInputStream file = new FileInputStream("config.properties");
+              FileInputStream file = new FileInputStream("configuration.properties");
               // Load "properties" object with the "file" we opened using FileInputStream
               properties.load(file);
 
